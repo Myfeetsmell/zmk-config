@@ -1,5 +1,6 @@
 # C2K's fork of urob's zmk-config for corne 42
 *Work in progress. Keymap image below does not apply to this repo
+
 ### Noteable Mods
 - qwerty
 - Mac Homerow Mods (CAGS/⎈⎇◆⇧)
