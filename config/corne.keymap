@@ -11,7 +11,7 @@
 
 #define X_RT &kp ESC
 #define X_RM &kp GRAVE
-#define X_RB &kp BLSH
+#define X_RB &kp BSLH
 #define X_RH &none
 
 /* activate bluetooth */
