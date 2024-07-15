@@ -15,10 +15,9 @@
 #define FN 1
 #define NUM 2
 #define SYS 3
-#define SYM 4
-#define GME 5
-#define MIR 6
-// #define MOUSE 7
+#define GME 4
+#define MIR 5
+// #define MOUSE 6
 
 
 #include "combos.dtsi"  // requires layer aliases
