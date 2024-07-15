@@ -170,6 +170,7 @@ ZMK_BEHAVIOR(sls, sticky_key,
     bindings = <&uc_shift>;
     ignore-modifiers;
 )
+
 ZMK_BEHAVIOR(uc_shift, macro,
     wait-ms = <0>;
     tap-ms = <1>;
