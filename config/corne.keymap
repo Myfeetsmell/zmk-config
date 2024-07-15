@@ -4,14 +4,14 @@
 #define NAV 1
 
 /* map Corne's extra keys */
-#define X_LT &kp RC(RG(Q))
-#define X_LM &tog NAV
-#define X_LB &kp LG(LS(LA(R)))
+#define X_LT &kp TAB
+#define X_LM &kp LCTRL
+#define X_LB &kp LSHIFT
 #define X_LH &none
 
-#define X_RT &none
-#define X_RM &none
-#define X_RB &none
+#define X_RT &kp ESC
+#define X_RM &kp GRAVE
+#define X_RB &kp BLSH
 #define X_RH &none
 
 /* activate bluetooth */
