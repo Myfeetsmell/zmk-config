@@ -16,49 +16,49 @@
 #define COMBO_TERM_SLOW 50
 
 // make homerow combos tap-only (so HRMs can be chorded instantaneously)
-#define HRC_TAB    &hml         LA(LGUI) TAB
-#define HRC_REPEAT &hml_repeat  LS(LGUI) 0
-#define HRC_LPAR   &hmr_lpar_lt RS(LGUI) 0
-#define HRC_RPAR   &hmr_rpar_gt LA(LGUI) 0
+// #define HRC_TAB    &hml         LA(LGUI) TAB
+// #define HRC_REPEAT &hml_repeat  LS(LGUI) 0
+// #define HRC_LPAR   &hmr_lpar_lt RS(LGUI) 0
+// #define HRC_RPAR   &hmr_rpar_gt LA(LGUI) 0
 
-#define HRC_CP_ALL &hml_copy_all LA(LSHFT) 0
+// #define HRC_CP_ALL &hml_copy_all LA(LSHFT) 0
 
 /******** PERSONAL COMBOS ********/
-#define HRC_RET    &hml         LS(LGUI) RETURN
-#define HRC_SHFT_RET    &hml         LS(LGUI) RS(RETURN)
-#define HRC_BSPC   &hml         LA(LGUI) BSPC
-#define HRC_ALL    &hml         LA(LGUI) LG(A)
-#define HRC_DEL_LINE &hml       LA(LG(LSHFT)) RS(BSPC)
+// #define HRC_RET    &hml         LS(LGUI) RETURN
+// #define HRC_SHFT_RET    &hml         LS(LGUI) RS(RETURN)
+// #define HRC_BSPC   &hml         LA(LGUI) BSPC
+// #define HRC_ALL    &hml         LA(LGUI) LG(A)
+// #define HRC_DEL_LINE &hml       LA(LG(LSHFT)) RS(BSPC)
 
-ZMK_COMBO(bspc,  HRC_BSPC,   LM3 LM2,     DEF NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(ret,   HRC_RET,    LM2 LM1,     DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(shft_ret,   HRC_SHFT_RET,    LM2 LM1,    NAV , COMBO_TERM_FAST)
+// ZMK_COMBO(bspc,  HRC_BSPC,   LM3 LM2,     DEF NAV NUM, COMBO_TERM_FAST)
+// ZMK_COMBO(ret,   HRC_RET,    LM2 LM1,     DEF NUM, COMBO_TERM_FAST)
+// ZMK_COMBO(shft_ret,   HRC_SHFT_RET,    LM2 LM1,    NAV , COMBO_TERM_FAST)
 
-ZMK_COMBO(under, &kp UNDER,     RT1 RT2,     DEF NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(equals, &kp EQUAL,    LT1 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(colon, &kp COLON,     LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(minus, &kp MINUS,     RT2 RT3,     DEF NAV NUM, COMBO_TERM_SLOW)
+// ZMK_COMBO(under, &kp UNDER,     RT1 RT2,     DEF NAV NUM, COMBO_TERM_SLOW)
+// ZMK_COMBO(equals, &kp EQUAL,    LT1 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
+// ZMK_COMBO(colon, &kp COLON,     LT3 LT2,     DEF NAV NUM, COMBO_TERM_FAST)
+// ZMK_COMBO(minus, &kp MINUS,     RT2 RT3,     DEF NAV NUM, COMBO_TERM_SLOW)
 // ZMK_COMBO(select_all, HRC_ALL,  LM1 LM3,     DEF NAV NUM, COMBO_TERM_SLOW)
 
-ZMK_COMBO(copy_all, HRC_CP_ALL, LM1 LM3,     DEF NAV NUM, COMBO_TERM_SLOW) // only working as select all right now
+// ZMK_COMBO(copy_all, HRC_CP_ALL, LM1 LM3,     DEF NAV NUM, COMBO_TERM_SLOW) // only working as select all right now
 
-ZMK_COMBO(delete_line, HRC_DEL_LINE, LM3 LM2 LM1, DEF NAV NUM, COMBO_TERM_SLOW)
+// ZMK_COMBO(delete_line, HRC_DEL_LINE, LM3 LM2 LM1, DEF NAV NUM, COMBO_TERM_SLOW)
 
 /* Horizontal combos - left hand */
 // ZMK_COMBO(mouse, &smart_mouse,  LT3 LT1,     DEF NAV NUM, COMBO_TERM_FAST)
 
-ZMK_COMBO(cut,   &kp LG(X),   LB3 LB1,     DEF NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(copy,  &kp LG(C),   LB3 LB2,     DEF NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(paste, &kp LG(V),   LB2 LB1,     DEF NAV NUM, COMBO_TERM_SLOW)
+// ZMK_COMBO(cut,   &kp LG(X),   LB3 LB1,     DEF NAV NUM, COMBO_TERM_SLOW)
+// ZMK_COMBO(copy,  &kp LG(C),   LB3 LB2,     DEF NAV NUM, COMBO_TERM_SLOW)
+// ZMK_COMBO(paste, &kp LG(V),   LB2 LB1,     DEF NAV NUM, COMBO_TERM_SLOW)
 
 
 /* Horizontal combos - right hand */
 
-ZMK_COMBO(lpar,  HRC_LPAR,      RM1 RM2,     DEF     NUM, COMBO_TERM_FAST)
-ZMK_COMBO(rpar,  HRC_RPAR,      RM2 RM3,     DEF     NUM, COMBO_TERM_FAST)
+// ZMK_COMBO(lpar,  HRC_LPAR,      RM1 RM2,     DEF     NUM, COMBO_TERM_FAST)
+// ZMK_COMBO(rpar,  HRC_RPAR,      RM2 RM3,     DEF     NUM, COMBO_TERM_FAST)
 
-ZMK_COMBO(lbkt,  &kp LBKT,      RB1 RB2,     DEF     NUM, COMBO_TERM_FAST)
-ZMK_COMBO(rbkt,  &kp RBKT,      RB2 RB3,     DEF     NUM, COMBO_TERM_FAST)
-ZMK_COMBO(lbrc,  &kp LBRC,      RB1 RB2,         NAV    , COMBO_TERM_FAST)
-ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,         NAV    , COMBO_TERM_FAST)
+// ZMK_COMBO(lbkt,  &kp LBKT,      RB1 RB2,     DEF     NUM, COMBO_TERM_FAST)
+// ZMK_COMBO(rbkt,  &kp RBKT,      RB2 RB3,     DEF     NUM, COMBO_TERM_FAST)
+// ZMK_COMBO(lbrc,  &kp LBRC,      RB1 RB2,         NAV    , COMBO_TERM_FAST)
+// ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,         NAV    , COMBO_TERM_FAST)
 
