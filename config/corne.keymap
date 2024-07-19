@@ -5,8 +5,8 @@
 
 /* map Corne's extra keys */
 #define X_LT &kp TAB
-#define X_LM &kp LCTRL
-#define X_LB &kp LSHIFT
+#define X_LM &kp LSHIFT
+#define X_LB &kp LCTRL
 #define X_LH &none
 
 #define X_RT &kp ESC
