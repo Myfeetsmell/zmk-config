@@ -3,14 +3,6 @@
 
 #define NAV 1
 
-// tap: GRAVE | shift + tap: TILDE | ctrl + shift + tap: LBRC
-SIMPLE_MORPH(grave_morph, SFT, &kp GRAVE, &grave_inner_morph)
-SIMPLE_MORPH(grave_inner_morph, CTL, &kp TILDE, &kp LEFT_BRACE)
-
-// tap: BSLH | shift + tap: PIPE | ctrl + shift + tap: RBRC
-SIMPLE_MORPH(bslh_morph, SFT, &kp BSLH, &bslh_inner_morph)
-SIMPLE_MORPH(bslh_inner_morph, CTL, &kp PIPE, &kp RIGHT_BRACE)
-
 /* map Corne's extra keys */
 #define X_LT &kp TAB
 #define X_LM &kp LSHIFT
@@ -18,8 +10,8 @@ SIMPLE_MORPH(bslh_inner_morph, CTL, &kp PIPE, &kp RIGHT_BRACE)
 #define X_LH &none
 
 #define X_RT &kp ESC
-#define X_RM &grave_morph
-#define X_RB &bslh_morph
+#define X_RM &kp GRAVE
+#define X_RB &kp BSLH
 #define X_RH &none
 
 /* activate bluetooth */
